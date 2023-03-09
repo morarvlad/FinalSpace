@@ -14,7 +14,7 @@ export default function NotFoundPage() {
       <video src={Hole} autoPlay loop muted />
       <div className="landingContent">
         <h2>Error 404</h2>
-        <p>''Looks like you got lost in time.''</p>
+        <p>''Looks like you got lost in space.''</p>
         <br></br>
         <button className="reconfigure" onClick={goHome}>
           RECONFIGURE

@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import RandomCharacterGetter from '../components/RandomCharacterGetter';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 export default function RandomCharacter() {
   const [data, setData] = useState(null);
-
-  // useEffect(() => {
-  //   fetch(`https://finalspaceapi.com/api/v0/character/1`)
-  //     .then(res => res.json())
-  //     .then(data => setData(data));
-  // }, []);
 
   const getData = number => {
     fetch(`https://finalspaceapi.com/api/v0/character/${number}`)
@@ -18,18 +13,23 @@ export default function RandomCharacter() {
   };
 
   return (
-    <div className="fancyBackground">
-      <NavBar />
-      <div className="randomContainer">
-        <input type="text"></input>
-        <button
-          className="getButton"
-          onClick={() => getData(Math.floor(Math.random() * 47 + 1))}
-        >
-          Get Character
-        </button>
-        {data && <RandomCharacterGetter data={data} />}
+    <>
+      <div className="fancyBackground fancyRandom">
+        <NavBar />
+        <div className="sideTitle">
+          <span> Find out which Final Space character are you?</span>
+        </div>
+        <div className="randomContainer">
+          <button
+            className="getButton"
+            onClick={() => getData(Math.floor(Math.random() * 47 + 1))}
+          >
+            Get Character
+          </button>
+          {data && <RandomCharacterGetter data={data} />}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

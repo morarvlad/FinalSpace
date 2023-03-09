@@ -5,15 +5,13 @@
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
-    /* background: linear-gradient(#fff, #999); */
-    background: linear-gradient(#e66465, #9198e5);
 }
 
 * {
     user-select: none;
 }
 
-.tinder-div {
+.tinder_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,14 +52,13 @@ h2 {
     position: absolute;
 }
 
-.cardContainer-tinder {
+.cardContainer_tinder {
     width: 90vw;
     max-width: 260px;
     height: 300px;
 }
 
-.card-tinder {
-    margin-top: 50px;
+.card_tinder {
     position: relative;
     background-color: #fff;
     width: 80vw;
@@ -71,6 +68,8 @@ h2 {
     border-radius: 20px;
     background-size: cover;
     background-position: center;
+    box-shadow: 0px 0px 3px 0px;
+    color: #000;
 }
 
 .cardContent {
@@ -94,12 +93,12 @@ h2 {
     color: #fff;
     animation-name: popup;
     animation-duration: 800ms;
+    margin-top: 30px;
 }
 
 .buttons {
     margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 @media (max-width: 625px) {
@@ -155,4 +154,16 @@ h2 {
     100% {
         transform: scale(1, 1)
     }
+}
+
+.title {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    background-color: black;
+    border-radius: 18px 18px 0px 0px;
+    padding: 8px 0px 5px 0px;
+    color: rgb(129, 36, 250);
 }

@@ -8,7 +8,11 @@ export default function CharacterGetter({ data }) {
         <div className="card" key={character.id}>
           <Link to={character.name}>
             <div className="card--image">
-              <img src={character.img_url} alt={character.name} />{' '}
+              <img
+                className="homeImage"
+                src={character.img_url}
+                alt={character.name}
+              />{' '}
             </div>
             <div className="card--link">
               <div className="card--title">{character.name}</div>

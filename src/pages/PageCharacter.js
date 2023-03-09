@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import SpecificCharacterGetter from '../components/SpecificCharacterGetter';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 export default function PageCharacter({ page }) {
   const [data, setData] = useState([]);
@@ -12,24 +12,25 @@ export default function PageCharacter({ page }) {
       .then(data => setData(data));
   }, [page]);
 
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
-  };
-
-  const goNext = () => {
-    navigate(`/${page}`);
-  };
   return (
     <>
       <div className="fancyBackground">
         <NavBar />
-        <button className="backButton" onClick={goBack}>
-          Go Back
-        </button>
+        <div className="sideTitle titleCharacter">
+          <h4>Character's Stats:</h4>
+        </div>
         <SpecificCharacterGetter data={data} />
-        <button onClick={goNext}>Go To Character Wiki</button>
+        <div className="randomContainer">
+          <a
+            href={`https://final-space.fandom.com/wiki/${data.name}`}
+            target="_blank"
+            rel="external noreferrer"
+          >
+            <button className="opensFS red"> wiki. </button>
+          </a>
+        </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }

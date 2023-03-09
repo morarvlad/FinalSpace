@@ -14,7 +14,7 @@ export default function RandomCharacterGetter({ data }) {
           target="_blank"
           rel="external noreferrer"
         >
-          <button className="opensFS"></button>
+          <button className="opensFS red"> wiki. </button>
         </a>
       </div>
     </>

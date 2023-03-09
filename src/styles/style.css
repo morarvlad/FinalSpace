@@ -6,6 +6,10 @@
     /* padding: 0; */
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .root {
     display: flex;
     flex-flow: row wrap;
@@ -13,21 +17,24 @@
     align-content: center;
     margin: auto;
     min-height: 85vh;
-    padding: 0 10px;
-    background-image: url(https://preview.redd.it/tbqjpme5qmj11.png?auto=webp&s=b52107c4d7b618119043d3663f8b986689ce40cf);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 12px 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 1px solid black;
 }
 
 .card {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
-    padding: 12px;
+    padding: 15px 0px 5px 0px;
     margin: 15px;
     text-align: center;
     background-color: #d5d5fc;
     border-radius: 6%;
+    max-width: 300px;
+}
+
+.homeImage {
+    max-width: 90%;
+    height: auto;
 }
 
 .card:hover,
@@ -60,12 +67,11 @@ a:hover {
     position: relative;
     text-align: center;
     height: 15vh;
-    margin-bottom: 10px;
     background-image: url(https://images5.alphacoders.com/110/1103712.jpg);
-    background-position-y: 70%;
-    background-position-x: 30%;
-    background-size: 105%;
-    border: 1px solid black;
+    background-position-y: 3%;
+    background-position-x: 20%;
+    background-size: 110%;
+    border: 3px solid black;
     color: white;
 }
 
@@ -92,8 +98,87 @@ a:hover {
 }
 
 .fancyBackground {
-    background-image: linear-gradient(315deg, rgb(141, 66, 77) 0%, rgb(141, 66, 77) 20%, transparent 20%, transparent 25%, transparent 25%, transparent 79%, rgb(57, 77, 115) 79%, rgb(57, 77, 115) 100%), linear-gradient(405deg, rgb(74, 56, 97) 0%, rgb(74, 56, 97) 53%, transparent 53%, transparent 54%, rgb(92, 80, 154) 54%, rgb(92, 80, 154) 89%, rgb(79, 99, 188) 89%, rgb(79, 99, 188) 100%), linear-gradient(405deg, rgb(83, 36, 57), rgb(83, 36, 57));
-    min-height: 100vh;
+    background-image: linear-gradient(315deg, rgb(141, 66, 77) 0%,
+            rgb(141, 66, 77) 20%,
+            transparent 20%, transparent 25%, transparent 25%, transparent 79%,
+            rgb(57, 77, 115) 79%, rgb(57, 77, 115) 100%),
+        linear-gradient(405deg, rgb(74, 56, 97) 0%,
+            rgb(74, 56, 97) 53%, transparent 53%, transparent 54%,
+            rgb(92, 80, 154) 54%, rgb(92, 80, 154) 89%,
+            rgb(79, 99, 188) 89%, rgb(79, 99, 188) 100%),
+        linear-gradient(405deg, rgb(83, 36, 57), rgb(83, 36, 57));
+    min-height: 93vh;
+}
+
+.fancyRandom {
+    background-image: radial-gradient(circle 7px at 89% 91%, rgb(62, 62, 62) 0%,
+            rgb(62, 62, 62) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 7px at 7% 16%, rgb(62, 62, 62) 0%,
+            rgb(62, 62, 62) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 7px at 99% 69%, rgb(62, 62, 62) 0%, rgb(62, 62, 62) 50%,
+            transparent 50%, transparent 100%),
+        radial-gradient(circle 5px at 78% 33%, rgb(64, 64, 64) 0%,
+            rgb(64, 64, 64) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 5px at 77% 32%, rgb(64, 64, 64) 0%,
+            rgb(64, 64, 64) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 5px at 47% 9%, rgb(64, 64, 64) 0%,
+            rgb(64, 64, 64) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 5px at 11% 33%, rgb(64, 64, 64) 0%,
+            rgb(64, 64, 64) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 5px at 3% 9%, rgb(64, 64, 64) 0%,
+            rgb(64, 64, 64) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 12px at 35% 68%, rgb(60, 60, 60) 0%,
+            rgb(60, 60, 60) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 12px at 72% 32%, rgb(60, 60, 60) 0%,
+            rgb(60, 60, 60) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle 12px at 51% 20%, rgb(60, 60, 60) 0%,
+            rgb(60, 60, 60) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle at center right, rgb(35, 35, 35) 0%,
+            rgb(35, 35, 35) 10%, transparent 10%, transparent 90%),
+        linear-gradient(135deg, rgba(90, 36, 112, 0.848), rgb(51, 4, 112));
+}
+
+.fancyTrailer {
+    background-image: repeating-linear-gradient(0deg, hsla(284, 43%, 48%, 0.05) 0px,
+            hsla(284, 43%, 48%, 0.05) 1px, transparent 1px, transparent 11px,
+            hsla(284, 43%, 48%, 0.05) 11px, hsla(284, 43%, 48%, 0.05) 12px,
+            transparent 12px, transparent 32px),
+        repeating-linear-gradient(135deg, hsla(284, 43%, 48%, 0.05) 0px,
+            hsla(284, 43%, 48%, 0.05) 1px, transparent 1px, transparent 11px,
+            hsla(284, 43%, 48%, 0.05) 11px, hsla(284, 43%, 48%, 0.05) 12px,
+            transparent 12px, transparent 32px), repeating-linear-gradient(0deg,
+            hsla(284, 43%, 48%, 0.05) 0px, hsla(284, 43%, 48%, 0.05) 1px,
+            transparent 1px, transparent 11px, hsla(284, 43%, 48%, 0.05) 11px,
+            hsla(284, 43%, 48%, 0.05) 12px, transparent 12px, transparent 32px),
+        repeating-linear-gradient(45deg, hsla(284, 43%, 48%, 0.05) 0px,
+            hsla(284, 43%, 48%, 0.05) 1px, transparent 1px, transparent 11px,
+            hsla(284, 43%, 48%, 0.05) 11px, hsla(284, 43%, 48%, 0.05) 12px,
+            transparent 12px, transparent 32px), linear-gradient(90deg, rgb(44, 4, 57), rgb(97, 34, 225));
+}
+
+.fancyGoE {
+    background-image: linear-gradient(90deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,
+            rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%,
+            rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,
+            rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%,
+            rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),
+        linear-gradient(67.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,
+            rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%,
+            rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,
+            rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%,
+            rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),
+        linear-gradient(112.5deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,
+            rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%,
+            rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,
+            rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%,
+            rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(1, 12, 34) 100%),
+        linear-gradient(45deg, rgb(168, 86, 201) 0%, rgb(168, 86, 201) 3%,
+            rgb(140, 74, 173) 3%, rgb(140, 74, 173) 11%, rgb(112, 61, 145) 11%,
+            rgb(112, 61, 145) 20%, rgb(85, 49, 118) 20%, rgb(85, 49, 118) 49%,
+            rgb(57, 37, 90) 49%, rgb(57, 37, 90) 71%, rgb(29, 24, 62) 71%,
+            rgb(29, 24, 62) 72%, rgb(1, 12, 34) 72%, rgb(8, 1, 22) 100%),
+        linear-gradient(90deg, rgb(95, 3, 74), rgb(35, 65, 96));
+    background-blend-mode: overlay, overlay, overlay, overlay, normal;
 }
 
 .landingDiv {
@@ -197,7 +282,12 @@ video {
 }
 
 .trailerVideo {
-    padding: max(35px, 3%);
+    padding: max(60px, 3%);
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 85vw;
+    min-width: 20vh;
+    margin-bottom: 1vh;
 }
 
 .homeWrapper {
@@ -206,7 +296,7 @@ video {
     text-align: center;
     margin: auto;
     height: 20vh;
-    background-color: rgba(0, 221, 221, 0.345);
+    background-color: inherit;
 }
 
 .quote {
@@ -217,8 +307,8 @@ video {
 }
 
 .opensFS {
-    height: min(max(550px, 4vw), 60px);
-    width: min(max(550px, 5vw), 60px);
+    height: min(max(580px, 4vw), 74px);
+    width: min(max(580px, 4vw), 74px);
     padding: 15px;
     letter-spacing: 0.3em;
     font-size: 0.7em;
@@ -232,13 +322,11 @@ video {
 }
 
 .opensFS:hover {
-    height: 70px;
-    width: 70px;
+    transform: scale(0.9);
     background-color: rgba(0, 221, 221, 0.192);
     box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
     border: 0px;
-    transition-delay: 0.05s;
-    /* transform: scale(0.9); */
+    transition-delay: 0.07s;
 }
 
 .trailerLink {
@@ -256,7 +344,7 @@ video {
 
 .insertedVideo {
     display: inline-block;
-    height: 31vh;
+    height: 31.5vh;
     width: 100%;
 }
 
@@ -266,9 +354,17 @@ video {
 }
 
 .footer {
+    position: relative;
+    text-align: center;
     height: 15vh;
     max-width: 100%;
-    background-color: rgb(60, 40, 81);
+    bottom: 0;
+    background-image: url(https://images5.alphacoders.com/110/1103712.jpg);
+    background-position-y: 99%;
+    background-position-x: 20%;
+    background-size: 110%;
+    border: 3px solid black;
+    color: white;
 }
 
 .footerElements {
@@ -284,13 +380,17 @@ video {
     justify-content: center;
     width: 100%;
     height: 7vh;
-    font-size: 20px;
+    font-size: 21px;
     color: #fff;
 }
 
 .footerLogos {
     margin: 15px;
     height: 35px;
+}
+
+.footerLogos:hover {
+    transform: scale(1.37);
 }
 
 .nav {
@@ -304,7 +404,24 @@ video {
 }
 
 .site-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+}
+
+.site-title::after {
+    content: '';
+    width: 5px;
+    height: 45%;
+    background-color: rgb(251, 251, 17);
+    position: absolute;
+    bottom: 25%;
+    left: 50px;
+    transform: scaleX(0);
+    transition: transform 280ms ease-in;
+    transform-origin: bottom;
+}
+
+.site-title:hover::after {
+    transform: scaleX(1);
 }
 
 .site-title:hover {
@@ -358,12 +475,34 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 4.5vh;
 }
 
 .getButton {
-    margin: 10px;
-    margin-top: 20px;
-    font-size: 1rem;
+    height: min(max(580px, 4vw), 40px);
+    width: min(max(580px, 4vw), 85px);
+    padding: 5px;
+    letter-spacing: 0.2em;
+    font-size: 0.6em;
+    background-color: rgba(236, 236, 11, 0.363);
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    margin: 1em;
+    box-shadow: inset 0 0 1em rgba(170, 164, 0, 0.5), 0 0 1em rgba(167, 170, 0, 0.5);
+    border: rgb(227, 234, 10) solid 1.5px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.getButton:hover {
+    transform: scale(0.9);
+    background-color: rgba(0, 221, 221, 0.192);
+    box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
+    border: 0px;
+    transition-delay: 0.07s;
 }
 
 .card-find {
@@ -387,51 +526,109 @@ video {
     min-width: 350px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .nav li.active {
-    background-color: #dddddd;
-} */
-
-/* @keyframes immerseButton {
-    0% {
-        background-color: rgba(0, 221, 221, 0.321);
-    }
-
-    100% {
-        background-color: rgb(221, 0, 136);
-    }
-} */
-
-/* .immerseButton {
-
-    background: none;
-    border-radius: 0;
-    padding: 0.81em;
-    letter-spacing: 0.3em;
-    font-size: 0.7em;
-    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
-    margin: 1em;
-    box-shadow: inset 0 0 1em rgba(0, 170, 170, 0.5), 0 0 1em rgba(0, 170, 170, 0.5);
-    border: #0dd solid 2px;
-    border-radius: 50%;
-    cursor: pointer;
+.sideTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 25px;
+    padding: 15px;
+    color: #fff;
+    background-color: #16094431;
+    border-radius: 25px;
+    font-size: 1.3rem;
 }
 
-.immerseButton:hover {
-    background-color: rgba(0, 221, 221, 0.192);
-    box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
-    transform: scale(0.9);
-    transition-delay: 0.05s;
-} */
+.directionsContainer {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+
+}
+
+.directions {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    width: 1vw;
+    height: 100%;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    font-size: 2.1rem;
+}
+
+.good {
+    color: #ef1017ce;
+}
+
+.evil {
+    color: #3a0b81e3;
+}
+
+.directionsArrows {
+    position: absolute;
+    width: auto;
+    color: #ef10101a;
+    font-size: 38rem;
+}
+
+.arrayTinder {
+    margin-top: 70px;
+    font-size: 8px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 25px;
+    background-image: repeating-linear-gradient(90deg, hsla(57, 0%, 42%, 0.09) 0px,
+            hsla(57, 0%, 42%, 0.09) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(0deg, hsla(57, 0%, 42%, 0.09) 0px,
+            hsla(57, 0%, 42%, 0.09) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(0deg, hsla(57, 0%, 42%, 0.09) 0px,
+            hsla(57, 0%, 42%, 0.09) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(90deg, hsla(57, 0%, 42%, 0.09) 0px,
+            hsla(57, 0%, 42%, 0.09) 1px, transparent 1px, transparent 10px),
+        linear-gradient(90deg, rgb(0, 0, 0), rgba(62, 62, 62, 0.849));
+}
+
+.arrayTitle {
+    font-size: 18px;
+    letter-spacing: 0.25ch;
+    margin-bottom: 0.07cm;
+}
+
+.red:hover {
+    background-color: rgba(241, 7, 31, 0.193);
+    box-shadow: inset 0 0 0 rgba(170, 0, 14, 0.5), 0 0 1.5em rgba(170, 0, 0, 0.7);
+}
+
+.small {
+    font-size: 11.2px;
+    letter-spacing: 0.3ch;
+}
+
+.left {
+    left: 7.5vh;
+}
+
+.right {
+    right: 7.5vh;
+}
+
+.demo {
+    position: absolute;
+    bottom: 6.3%;
+    margin: 40px 20px 20px 15px;
+    font-size: 10px;
+    letter-spacing: 0.7ch;
+}
+
+.titleCharacter {
+    margin-top: 5vh;
+    margin-bottom: auto;
+}

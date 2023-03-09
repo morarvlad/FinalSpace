@@ -25,5 +25,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-//need to do a tracker for if my mouse if hovering the button... hover===true ? videoRef = 5 : videoRef = 100

@@ -9,13 +9,13 @@ export default function NavBar() {
       </Link>
       <ul>
         <li className="nav-item">
-          <Link to="/trailer">Trailer</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/RandomCharacter">Your character</Link>
+          <Link to="/RandomCharacter">Your Character</Link>
         </li>
         <li className="nav-item">
           <Link to="/GoodOrEvil">Good or Evil</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/trailer">Trailer</Link>
         </li>
       </ul>
     </nav>
