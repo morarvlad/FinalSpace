@@ -30,7 +30,7 @@ export default function PageCharacter({ page }) {
           </a>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
